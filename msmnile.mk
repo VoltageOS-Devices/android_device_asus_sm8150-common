@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
+# APEX
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     update_engine \
