@@ -218,6 +218,7 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
+    init.qcom.power.rc \
     ueventd.qcom.rc
 
 # Soong namespaces
