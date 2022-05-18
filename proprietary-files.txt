@@ -222,8 +222,8 @@ vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
+# Display (HDR) - from LA.UM.9.1.r1-11500-SMxxx0.0
+vendor/lib64/libhdr_tm.so|a222a7d838735c5ce73f06d4096fea3ca19611c8
 
 # Diagnostics
 system_ext/lib64/libdiag_system.so
@@ -231,19 +231,19 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 
-# Display (SDM)
-vendor/bin/ppd
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Display (SDM) - from LA.UM.9.1.r1-11500-SMxxx0.0
+vendor/bin/ppd|57172f5d3b0b9bfc04f5eed93672d2b6f175d1f4
+vendor/lib64/libdisp-aba.so|44993853ff9d4340e856e6f53d802f10372442d3
+vendor/lib64/libdisplayqos.so|5548732c916e629f18f45ce257ce843b679a136a
+vendor/lib64/libdpps.so|a9d4e3806a433b9dfc7cb49556efa9fc65389e75
+vendor/lib64/libqseed3.so|7f2a659fb9acd84d79c11dbd6901b816d5d1214f
+vendor/lib64/libsdedrm.so|5cf6147a8b33bb9ae4b99e6ba923d0be32295768
+vendor/lib64/libsdm-color.so|d0984c33dcbf84940676917e0c3584b0ccfeaf03
+vendor/lib64/libsdm-colormgr-algo.so|15f696a4575868e528360896f1e0098d531899c0
+vendor/lib64/libsdm-diag.so|341907510d377127adb98d07e7d9f30448d08def
+vendor/lib64/libsdm-disp-vndapis.so|60da199073d2b0881bf075190a644b332503f39c
+vendor/lib64/libsdmextension.so|e10d29f29b7a53b75369e58e8a165b2b86609f26
+vendor/lib64/libtinyxml2_1.so|ff32deb110acb02cb5def5f3404f9064c1276483
 
 # Display configs
 vendor/etc/qdcm_calib_data_Dual_Sharp_WQHD_cmd_mode_dsi_panel.xml
