@@ -353,9 +353,9 @@ vendor/lib64/libllvm-glnext.so|c32e43fad7c41071c736ccc0daf311c3d72e52ef
 vendor/lib64/libllvm-qcom.so|6c19eabb6f1ed256bcc07cfd8596c48b968d4e68
 vendor/lib64/libpvr.so|4ec5f223df1e2849dbe67687e293653406b6939e
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
+# Graphics (Vulkan) - from LA.UM.9.1.r1-11500-SMxxx0.0
+vendor/lib/hw/vulkan.adreno.so|c611ef7f442dc43c94f8d210578d3aefe62f1474
+vendor/lib64/hw/vulkan.adreno.so|e05eb4e3e4c1d67f3094ed29ff8bef97a48e2385
 
 # GPS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
