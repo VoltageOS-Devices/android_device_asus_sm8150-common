@@ -305,11 +305,6 @@ vendor/lib64/libdpmqmihal.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
-# Gatekeeper - from LA.UM.9.1.r1-11500-SMxxx0.0
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|7b0b612fe07a4e8520590e6941e2729227b1702e
-
 # Graphics (Adreno) - from LA.UM.9.1.r1-11500-SMxxx0.0
 -vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk;PRESIGNED|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 vendor/lib/egl/eglSubDriverAndroid.so|efd9fae6bdfeafbe6351bfec173528a1749dbebd
@@ -414,17 +409,18 @@ vendor/lib64/libhbtpclient.so
 vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpfrmwk.so
 
-# Keymaster - from LA.UM.9.1.r1-11500-SMxxx0.0
-vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti|30507f03bda271ca0052d6bd5177b8d7976dfbae
-vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|f2dfed2111ada63ddc5283e12b6cb051bd9f9736
-vendor/bin/init.qti.keymaster.sh|2da99a26fa22753fad958f6347c5d3570e89e4ae
-vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc|21178f2505737bb920c1a645a2d014e9fa613b10
-vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|f6907552961ba772c1ad5b493913a60d65abedb4
-vendor/lib64/libkeymasterdeviceutils.so|1fcd23548fbfa3290b17806517c6929c3a9f4b53
-vendor/lib64/libkeymasterprovision.so|7444f5945a6ac771b997edd5f7088283c6c8490f
-vendor/lib64/libkeymasterutils.so|7e42e00998259abfeaf6bca3ec82d37f54dd9ff9
-vendor/lib64/libqtikeymaster4.so|bb08331f9b36c273ed44bbe3956ef7bafca97d2c
-vendor/lib64/libspcom.so|7cc4390e7caf520586c22cdb7219842fa5d6ed2c
+# Keymaster - from rog3 31.0210.0210.243
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|9aac7b4abe9da99e80b912f203212e61ab00c198
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|9518f26241928c21c4bb0085192c0967859f5898
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|f332c3aa8c41fb693d71c1cd6d3f16a1346f24c3
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|f0dfd1476708aa786b72c6d9bcd0e84cf1b3b393
+vendor/lib64/libkeymasterdeviceutils.so|2b29d5fcad31490faff86ab679de7ff37653acc5
+vendor/lib64/libkeymasterprovision.so|2d530aa35bb21dc3ce72579d9b81f2b50dc42b69
+vendor/lib64/libkeymasterutils.so|7378dc44b2a9832b76e01d33f03271c6fe0230e6
+vendor/lib64/libqtikeymaster4.so|e8d10104560aa441c766fcdd37b13ad3713f7126
+vendor/lib64/libspcom.so|ea1034727a09187b6952d6a21aa9a8ab775e6ccb
 
 # IPA Firmware
 vendor/firmware/ipa_uc.b00
