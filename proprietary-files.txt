@@ -464,6 +464,14 @@ vendor/etc/system_properties.xml
 vendor/lib/libmmosal.so
 vendor/lib/libqcodec2.so
 vendor/lib64/libmmosal.so
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs_vendor.xml
+vendor/etc/media_codecs.xml
+vendor/etc/media_profiles_vendor.xml
+vendor/etc/media_profiles.xml
+vendor/etc/system_properties.xml
 
 # Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
