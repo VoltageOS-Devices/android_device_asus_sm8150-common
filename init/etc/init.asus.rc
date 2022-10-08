@@ -12,14 +12,46 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys10/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys11/restart_level RELATED
 
-on post-fs
+on boot
 
     # Goodix Fingerprint
-    chown system root /dev/goodix_fp
-    chmod 0760 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+
+    # Light Sensor
+    chown system system /sys/class/sensors/lsensor/adc
+    chown system system /sys/class/sensors/lsensor/cal
+    chown system system /sys/class/sensors/lsensor/read_reg
+    chown system system /sys/class/sensors/lsensor/selection
+    chown system system /sys/class/sensors/lsensor/switch
+    chown system system /sys/class/sensors/lsensor/write_reg
+
+    # Proximity Sensor
+    chown system system /sys/class/sensors/psensor/hi_cal
+    chown system system /sys/class/sensors/psensor/inf_cal
+    chown system system /sys/class/sensors/psensor/load_cal
+    chown system system /sys/class/sensors/psensor/low_cal
+    chown system system /sys/class/sensors/psensor/proxm
+    chown system system /sys/class/sensors/psensor/read_reg
+    chown system system /sys/class/sensors/psensor/selection
+    chown system system /sys/class/sensors/psensor/switch
+    chown system system /sys/class/sensors/psensor/write_reg
+
+    # Frgbsensor
+    chown system shell /sys/class/sensors/frgbsensor/switch
 
 on post-fs-data
 
     # Goodix Fingerprint permissions
     mkdir /data/vendor/goodix 0777 system system
 
+    # Proximity
+    write /sys/class/sensors/psensor/load_cal 1
+
+service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
+    override
+    class hal
+    user system
+    group system wakelock context_hub input
+    writepid /dev/cpuset/system-background/tasks
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10
