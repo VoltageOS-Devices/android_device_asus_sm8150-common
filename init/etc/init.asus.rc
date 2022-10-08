@@ -47,6 +47,9 @@ on post-fs-data
     # Proximity
     write /sys/class/sensors/psensor/load_cal 1
 
+    # Asus Camera Motor
+    chmod 0777 /dev/asusMotoDrv
+
 service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
     override
     class hal
