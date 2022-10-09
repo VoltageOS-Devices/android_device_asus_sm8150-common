@@ -284,6 +284,12 @@ vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
+# Gatekeeper - from LA.UM.9.1.r1-11500.02-SMxxx0.QSSI12.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|6a90a3902fa4effa005fd58d7222fde6260d4fe4
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|14819df15693c737fb2a51bf89fe826200286006
+
 # Graphics (Adreno) - from LA.UM.9.1.r1-11500-SMxxx0.0
 -vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk;PRESIGNED|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 vendor/lib/egl/eglSubDriverAndroid.so|efd9fae6bdfeafbe6351bfec173528a1749dbebd
@@ -389,12 +395,9 @@ vendor/lib64/libhbtpdsp.so
 vendor/lib64/libhbtpfrmwk.so
 
 # Keymaster - from rog3 31.0210.0210.243
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|9aac7b4abe9da99e80b912f203212e61ab00c198
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|9518f26241928c21c4bb0085192c0967859f5898
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|f332c3aa8c41fb693d71c1cd6d3f16a1346f24c3
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|f0dfd1476708aa786b72c6d9bcd0e84cf1b3b393
 vendor/lib64/libkeymasterdeviceutils.so|2b29d5fcad31490faff86ab679de7ff37653acc5
 vendor/lib64/libkeymasterprovision.so|2d530aa35bb21dc3ce72579d9b81f2b50dc42b69
 vendor/lib64/libkeymasterutils.so|7378dc44b2a9832b76e01d33f03271c6fe0230e6
