@@ -66,6 +66,10 @@ camera.disable_zsl_mode=1
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM8150
+
 # Display
 vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
 vendor.display.disable_decimation=1
