@@ -1,3 +1,27 @@
 # Charger
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
+
+# Display
+vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+vendor.display.disable_decimation=1
+vendor.display.disable_excl_rect=0
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_inline_rotator=1
+vendor.display.disable_ui_3d_tonemap=1
+vendor.display.enable_default_color_mode=1
+vendor.display.enable_null_display=0
+vendor.display.enable_optimize_refresh=1
+
+# Graphics
+debug.egl.hw=1
+debug.mdpcomp.logs=0
+debug.sf.hw=1
+persist.sys.sf.color_saturation=1.0
+ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.msmnile.api30
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+debug.gralloc.enable_fb_ubwc=1
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
