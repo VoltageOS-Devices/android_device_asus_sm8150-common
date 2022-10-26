@@ -227,6 +227,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service
+
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
