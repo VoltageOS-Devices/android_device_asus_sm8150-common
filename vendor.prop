@@ -59,6 +59,9 @@ persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 vendor.qcom.bluetooth.soc=cherokee
 
+# Camera
+camera.disable_zsl_mode=1
+
 # Charger
 ro.charger.enable_suspend=true
 ro.charger.disable_init_blank=true
