@@ -159,6 +159,14 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := \
+    ADF \
+    APD \
+    asdf \
+    batinfo \
+    xrom
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
