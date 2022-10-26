@@ -443,6 +443,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # Vibrator
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
