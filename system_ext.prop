@@ -14,3 +14,10 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
+
+# CNE
+persist.vendor.cne.feature=1
+
+# RIL
+persist.radio.dynamic_sar=false
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
