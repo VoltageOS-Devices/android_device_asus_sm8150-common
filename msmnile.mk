@@ -422,6 +422,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     libsensorndkbridge
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 28
+
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
