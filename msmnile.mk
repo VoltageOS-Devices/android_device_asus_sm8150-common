@@ -168,7 +168,6 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    android.hardware.camera.device@3.6.vendor \
     android.frameworks.displayservice@1.0.vendor
 
 PRODUCT_COPY_FILES += \
@@ -179,6 +178,16 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
+
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2.vendor \
+
+# Crypto
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.0.vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -229,7 +238,11 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -263,7 +276,8 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -396,7 +410,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service-qti \
+    android.hardware.power@1.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
@@ -429,7 +444,15 @@ PRODUCT_PACKAGES += \
     librilutils \
     librmnetctl \
     libxml2 \
-    libxml.vendor
+    libxml.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat \
