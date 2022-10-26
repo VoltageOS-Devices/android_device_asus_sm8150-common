@@ -419,7 +419,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor
+    android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    libsensorndkbridge
 
 # Telephony
 PRODUCT_COPY_FILES += \
