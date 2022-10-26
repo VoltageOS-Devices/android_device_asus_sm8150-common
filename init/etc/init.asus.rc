@@ -1,0 +1,11 @@
+on post-fs
+
+    # Goodix Fingerprint
+    chown system root /dev/goodix_fp
+    chmod 0760 /dev/goodix_fp
+
+on post-fs-data
+
+    # Goodix Fingerprint permissions
+    mkdir /data/vendor/goodix 0777 system system
+
