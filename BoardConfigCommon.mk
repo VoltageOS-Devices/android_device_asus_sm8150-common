@@ -78,6 +78,9 @@ ifeq ($(HOST_OS),linux)
 endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH_COMMON)/config.fs
+
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \

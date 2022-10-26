@@ -183,6 +183,10 @@ $(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/dis
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
