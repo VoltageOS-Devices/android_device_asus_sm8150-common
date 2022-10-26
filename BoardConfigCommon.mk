@@ -116,6 +116,10 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_CLANG_VERSION := r416183b1
 
+# Kernel modules - WLAN
+TARGET_MODULE_ALIASES += \
+    wlan.ko:qca_cld3_wlan.ko
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
