@@ -1031,8 +1031,3 @@ vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|0d10d27ad15c67
 vendor/lib64/libmm-hdcpmgr.so|3956d47a9a519e3ccb263dc92cdba2363820ab6a
 vendor/lib64/libwfddisplayconfig_proprietary.so|0d3631313db53e101e576a8ece2fe3e2d6f227cc
 vendor/lib64/libwfdhdcpcp.so|cf7fc0f87ab5be744bf2565608528f654d7b0f94
-
-# Misc
-vendor/lib/libdsi_netctrl.so
-vendor/lib/libxml.so
-vendor/lib64/libxml.so
