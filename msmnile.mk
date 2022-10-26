@@ -366,6 +366,9 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor \
