@@ -153,6 +153,9 @@ ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
     BOARD_INCLUDE_RECOVERY_DTBO := true
 endif
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
