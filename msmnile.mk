@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
     init.qcom.power.rc \
     ueventd.qcom.rc
 
+# IRQ balance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # NFC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
