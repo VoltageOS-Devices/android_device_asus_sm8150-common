@@ -164,7 +164,10 @@ PRODUCT_COPY_FILES += \
 
 # Data
 PRODUCT_PACKAGES += \
-    librmnetctl
+    librmnetctl \
+    IPACM_cfg.xml \
+    ipacm \
+    liboffloadhal
 
 # Display
 PRODUCT_COPY_FILES += \
