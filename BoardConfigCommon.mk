@@ -150,5 +150,12 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
+# VINTF
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH_COMMON)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH_COMMON)/vintf/compatibility_matrix.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH_COMMON)/vintf/manifest-qva.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH_COMMON)/vintf/framework_compatibility_matrix.xml
+
 # Inherit from the proprietary version
 include vendor/asus/sm8150-common/BoardConfigVendor.mk
