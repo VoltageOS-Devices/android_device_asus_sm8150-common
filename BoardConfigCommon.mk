@@ -173,6 +173,10 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     batinfo \
     xrom
 
+# Sepolicy
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/sepolicy/vendor
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
