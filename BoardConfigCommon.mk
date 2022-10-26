@@ -38,6 +38,37 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Kernel
+BOARD_KERNEL_CMDLINE := \
+    androidboot.console=ttyMSM0 \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    cgroup.memory=nokmem,nosocket \
+    console=ttyMSM0,115200n8 \
+    earlycon=msm_geni_serial,0xa90000 \
+    loop.max_part=7 \
+    lpm_levels.sleep_disabled=1 \
+    msm_rtb.filter=0x237 \
+    reboot=panic_warm \
+    service_locator.enable=1 \
+    swiotlb=2048 \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    kpti=off
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_TAGS_OFFSET := 0x00008000
+BOARD_RAMDISK_OFFSET     := 0x01000000
+BOARD_TAGS_OFFSET := 0x00000100
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
+TARGET_KERNEL_CLANG_VERSION := r416183b1
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
