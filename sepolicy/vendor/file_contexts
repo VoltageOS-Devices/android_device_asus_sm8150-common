@@ -53,3 +53,6 @@
 # Sensors
 /dev/asus2ndAccelSensor                                                                            u:object_r:asus_sensors_device:s0
 /dev/asus2ndGyroSensor                                                                             u:object_r:asus_sensors_device:s0
+
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.asus_msmnile		   u:object_r:hal_lineage_touch_default_exec:s0
