@@ -527,5 +527,8 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/sm8150-common/sm8150-common-vendor.mk)
