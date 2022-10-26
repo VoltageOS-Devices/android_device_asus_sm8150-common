@@ -25,6 +25,12 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant@1.0 \
+    com.dsi.ant@1.0.vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
