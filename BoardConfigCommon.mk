@@ -130,6 +130,7 @@ TARGET_USES_MKE2FS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
+BOARD_USES_QCOM_HARDWARE := true
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH_COMMON)/vendor.prop
