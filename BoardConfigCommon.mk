@@ -143,6 +143,9 @@ TARGET_USES_MKE2FS := true
 TARGET_BOARD_PLATFORM := msmnile
 BOARD_USES_QCOM_HARDWARE := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH_COMMON)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH_COMMON)/vendor.prop
