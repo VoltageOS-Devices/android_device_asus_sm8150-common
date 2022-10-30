@@ -3,7 +3,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/APD                                                 u:object_r:asus_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/asdf                                                u:object_r:asdf_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/batinfo                                             u:object_r:asus_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/asusfw_[ab]                                         u:object_r:vendor_custom_ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/asusfw_[ab]                                         u:object_r:vendor_asusfw_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/xrom_[ab]                                           u:object_r:vendor_custom_ab_block_device:s0
 
 /(vendor|system/vendor)/bin/mount_apd.sh                                                           u:object_r:vendor_shell_exec:s0
