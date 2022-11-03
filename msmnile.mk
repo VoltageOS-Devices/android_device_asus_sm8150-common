@@ -210,7 +210,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Device Parts
 PRODUCT_PACKAGES += \
-    AsusParts
+   AsusParts
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-asusparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-asusparts.xml

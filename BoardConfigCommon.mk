@@ -192,7 +192,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH_COMMON)/vintf/compatibility_matrix.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH_COMMON)/vintf/manifest-qva.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH_COMMON)/vintf/framework_compatibility_matrix.xml \
-    vendor/bliss/config/device_framework_matrix.xml
+    vendor/voltage/config/device_framework_matrix.xml
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
