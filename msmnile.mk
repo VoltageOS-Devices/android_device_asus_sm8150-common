@@ -311,7 +311,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.qcom.power.rc \
-	 init.safailnet.rc \
     ueventd.qcom.rc
 
 # IRQ balance
